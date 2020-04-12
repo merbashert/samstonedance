@@ -90,3 +90,28 @@ h2, h4 {
     grid-column-start: 2;
     margin-left: 5px;
 }
+
+
+/**********ABOUT**********/
+#moon_drop {
+    float: left;
+    transform: translateY(-470px);
+    overflow: hidden;
+    animation: drop 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes drop {
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.bio {
+    float: right;
+    width: 30%;
+}
+
+.about {
+    overflow: hidden;
+}
