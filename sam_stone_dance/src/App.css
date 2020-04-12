@@ -1,6 +1,12 @@
+@font-face {
+  font-family: 'Sofija';
+  src: local('Sofija'), url(./fonts/Sofija.ttf) format('truetype');
+}
+
 /**********NAV BAR**********/
 
 .nav-bar, .navbar-brand{
+
 }
 
 .nav-bar div {
@@ -54,4 +60,29 @@
     animation-name: rotate;
     animation-duration: 3s;
     width: 35%;
+}
+
+
+
+/**********SAM CREATES**********/
+h2, h4 {
+    font-family: 'Arvo', serif;
+    margin: 2px, 0px;
+}
+
+.project {
+    display:grid;
+    grid-template-columns: 30% 1fr 10%;
+    grid-template-rows: 10% 1fr 10%;
+    margin: 20px 5px;
+}
+
+.project-image {
+    grid-column-start: 1;
+    width: 100%;
+}
+
+.project-info {
+    grid-column-start: 2;
+    margin-left: 5px;
 }

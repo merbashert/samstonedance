@@ -29,13 +29,15 @@ export class Project extends React.Component {
         const { imgUrl, isLoaded} = this.state;
         if(isLoaded) {
             return (
-                <div>
-                <h2 style = {{marginBottom: '0' }}>{ title.rendered }</h2>
-                <img style ={{ width: '25%'}} src = {imgUrl} alt={title.rendered}></img>
-                <h4 style = {{marginBottom: '0' }}>{ choreographer }</h4>
-                <h4 style = {{marginBottom: '0' }}>{ performed_by }</h4>
-                <h4 style = {{marginBottom: '0' }}>{ music_by }</h4>
-                <h4 style = {{marginBottom: '0' }}>{ performance_date }</h4>
+                <div className='project'>
+                <img src = {imgUrl} alt={title.rendered} className='project-image'></img>
+                <div className = 'project-info'>
+                <h2>{ title.rendered }</h2>
+                <h4>{ choreographer }</h4>
+                <h4>{ performed_by }</h4>
+                <h4>{ music_by }</h4>
+                <h4>{ performance_date }</h4>
+                </div>
                 <hr/>
                 </div>
             )
