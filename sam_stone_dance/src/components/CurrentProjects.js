@@ -1,16 +1,11 @@
 import React from 'react'
-import banner from '../assets/Sam_banner.jpg'
-import Image from 'react-bootstrap/Image';
 
-
-const CurrentProjects = props => {
-
-    return (
-        <div className="sitename-container">
-
-                <Image src={banner} alt='banner'/>
-
-        </div>
-    )
+class CurrentProjects extends React.Component {
+    render () {
+        return(
+            <h1>Current Projects</h1>
+        )
+    }
 }
-export default CurrentProjects
+
+export default CurrentProjects;

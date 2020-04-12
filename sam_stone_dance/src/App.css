@@ -65,6 +65,10 @@
 
 
 /**********SAM CREATES**********/
+h1 {
+    font-family: 'Sofija', cursive;
+}
+
 h2, h4 {
     font-family: 'Arvo', serif;
     margin: 2px, 0px;

@@ -4,24 +4,38 @@ import axios from 'axios';
 
 export class SamCreates extends React.Component {
     state = {
-        samProjects: {},
+        samProjectsEvening: {},
+        samProjectsOther: {},
         isLoaded: false
     }
 
     componentDidMount() {
-        axios.get('http://localhost:8000/wp-json/wp/v2/posts')
-        .then(res => this.setState({
-            samProjects: res.data,
-            isLoaded: true
-        }))
-        .catch(err => console.log(err))
+        const getImageUrl = axios.get('http://localhost:8000/wp-json/wp/v2/posts?tags=3');
+        const getAuthor = axios.get('http://localhost:8000/wp-json/wp/v2/posts?tags=4');
+
+        Promise.all([getImageUrl, getAuthor]).then(res => {
+            this.setState({
+                samProjectsEvening: res[0].data,
+                samProjectsOther: res[1].data,
+                isLoaded: true
+            })
+        });
     }
+
     render () {
-        const {samProjects, isLoaded} = this.state;
+        const {samProjectsEvening, samProjectsOther, isLoaded} = this.state;
         if(isLoaded) {
             return (
                 <div>
-                    {samProjects.map(project => (
+                    <h1>Sam Stone evening length dance works</h1>
+                    {samProjectsEvening.map(project => (
+                        <Project key = {project.id} project={project}/>
+                    ))}
+
+                    <br/>
+
+                    <h1>Other dreams and projects</h1>
+                    {samProjectsOther.map(project => (
                         <Project key = {project.id} project={project}/>
                     ))}
 

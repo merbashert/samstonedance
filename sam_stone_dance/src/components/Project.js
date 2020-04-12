@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import axios from 'axios';
 
-export class Project extends React.Component {
+export class Project_Evening extends React.Component {
     state = {
         imgUrl: '',
         isLoaded: false
@@ -24,8 +24,8 @@ export class Project extends React.Component {
         });
     }
     render () {
-        const { id, title, tags } = this.props.project;
-        const { choreographer, performed_by, music_by, performance_date } = this.props.project.acf;
+        const { title } = this.props.project;
+        const { choreographer, performed_by, music_by, performance_date, video_excerpt } = this.props.project.acf;
         const { imgUrl, isLoaded} = this.state;
         if(isLoaded) {
             return (
@@ -37,6 +37,8 @@ export class Project extends React.Component {
                 <h4>{ performed_by }</h4>
                 <h4>{ music_by }</h4>
                 <h4>{ performance_date }</h4>
+                {video_excerpt?<a href={video_excerpt}><h4>Video Excerpt</h4></a>:null}
+
                 </div>
                 <hr/>
                 </div>
@@ -46,4 +48,4 @@ export class Project extends React.Component {
     }
 }
 
-export default Project;
+export default Project_Evening;
