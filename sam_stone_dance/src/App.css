@@ -1,0 +1,57 @@
+/**********NAV BAR**********/
+
+.nav-bar, .navbar-brand{
+}
+
+.nav-bar div {
+    margin-bottom: 0px;
+    margin-right: 70px;
+    padding: 5px;
+}
+
+/**********HOME**********/
+#banner{
+    grid-column: 1/4;
+    grid-row-start: 1;
+    width: 100%;
+}
+
+.sitename-container {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 40px 1fr 50%;
+    grid-template-rows: 1fr 60%;
+    overflow: hidden;
+}
+
+@keyframes rotate {
+  15% {
+    transform: rotate(90deg);
+  }
+  30% {
+      transform: rotate(-90deg)
+  }
+  45% {
+      transform: rotate(60deg)
+  }
+  60% {
+      transform: rotate(-60deg)
+  }
+  70% {
+      transform: rotate(30deg)
+  }
+  85% {
+      transform: rotate(-30deg)
+  }
+}
+
+#moon {
+    grid-column-start: 2;
+    grid-row-start: 1;
+    z-index: 1;
+    transform: translateY(-15px);
+    transform-origin: top;
+    animation-name: rotate;
+    animation-duration: 3s;
+    width: 35%;
+}
