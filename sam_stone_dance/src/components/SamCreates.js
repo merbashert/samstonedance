@@ -10,10 +10,10 @@ export class SamCreates extends React.Component {
     }
 
     componentDidMount() {
-        const getImageUrl = axios.get('http://localhost:8000/wp-json/wp/v2/posts?tags=3');
-        const getAuthor = axios.get('http://localhost:8000/wp-json/wp/v2/posts?tags=4');
+        const getEvening = axios.get('http://localhost:8000/wp-json/wp/v2/posts?tags=3');
+        const getOther = axios.get('http://localhost:8000/wp-json/wp/v2/posts?tags=4');
 
-        Promise.all([getImageUrl, getAuthor]).then(res => {
+        Promise.all([getEvening, getOther]).then(res => {
             this.setState({
                 samProjectsEvening: res[0].data,
                 samProjectsOther: res[1].data,
