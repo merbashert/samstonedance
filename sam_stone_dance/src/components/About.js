@@ -1,7 +1,6 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import axios from 'axios';
 import moon from '../assets/moon.png'
-import Image from 'react-bootstrap/Image';
 
 class About extends React.Component {
 
@@ -34,8 +33,12 @@ class About extends React.Component {
             return(
                 <div className='about'>
                     <img src = {moon} id='moon_drop'></img>
-                    <img src = {imgUrl} alt= 'Sam face' className='bio'></img>
-                    <h5 dangerouslySetInnerHTML = {{__html: about.content.rendered}}></h5>
+                    <div>
+                <div className = 'positioner'></div>
+                    <img src = {imgUrl} alt="sam face" className='bio'></img>
+                    <h6 dangerouslySetInnerHTML = {{__html: about.content.rendered}}></h6>
+                    </div>
+
 
                 </div>
             )
