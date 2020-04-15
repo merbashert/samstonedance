@@ -1,12 +1,13 @@
 import React from 'react'
+import moon from '../assets/moon.png'
 
 class CurrentProjects extends React.Component {
     render () {
         return(
-            <React.Fragment>
-            <h1>Current Projects</h1>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/jhMEFpUtJhs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </React.Fragment>
+            <div className = 'current-projects'>
+            <img src = {moon} id='moon_drop'></img>
+            <iframe width="640" height="385" src="https://www.youtube.com/embed/jhMEFpUtJhs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
         )
     }
 }
