@@ -1,6 +1,7 @@
 import React from 'react';
 import Project from './Project';
 import axios from 'axios';
+import moon from '../assets/moon.png'
 
 export class SamCreates extends React.Component {
     state = {
@@ -26,18 +27,21 @@ export class SamCreates extends React.Component {
         const {samProjectsEvening, samProjectsOther, isLoaded} = this.state;
         if(isLoaded) {
             return (
-                <div>
-                    <h1>Sam Stone evening length dance works</h1>
-                    {samProjectsEvening.map(project => (
-                        <Project key = {project.id} project={project}/>
-                    ))}
-
+                <div className = 'sam-creates-container'>
+                    <img src = {moon} id='moon_drop_creates'></img>
+                    <h1 id='evening'>Sam Stone evening length dance works</h1>
+                    <div id='evening-project-list'>
+                        {samProjectsEvening.map(project => (
+                            <Project key = {project.id} project={project}/>
+                        ))}
+                    </div>
                     <br/>
-
-                    <h1>Other dreams and projects</h1>
+                    <div id='other-project-list'>
+                    <h1 id='other'>Other dreams and projects</h1>
                     {samProjectsOther.map(project => (
                         <Project key = {project.id} project={project}/>
                     ))}
+                    </div>
 
                 </div>
             )

@@ -32,13 +32,13 @@ export class Project_Evening extends React.Component {
                 <div className='project'>
                 <img src = {imgUrl} alt={title.rendered} className='project-image'></img>
                 <div className = 'project-info'>
-                <h2>{ title.rendered }</h2>
-                <h4>{ choreographer }</h4>
-                <h4>{ performed_by }</h4>
-                <h4>{ music_by }</h4>
+                <h3>{ title.rendered }</h3>
+                <h5>{ choreographer }</h5>
+                <h5>{ performed_by }</h5>
+                <h5>{ music_by }</h5>
                 <br/ >
-                <h4>{ performance_date }</h4>
-                {video_excerpt?<a href={video_excerpt}><h4>Video Excerpt</h4></a>:null}
+                <h5>{ performance_date }</h5>
+                {video_excerpt?<a href={video_excerpt}><h5>Video Excerpt</h5></a>:null}
 
                 </div>
                 <hr/>
