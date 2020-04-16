@@ -36,9 +36,8 @@ export class Project_Evening extends React.Component {
                 <h5>{ choreographer }</h5>
                 <h5>{ performed_by }</h5>
                 <h5>{ music_by }</h5>
-                <br/ >
                 <h5>{ performance_date }</h5>
-                {video_excerpt?<a href={video_excerpt}><h5>Video Excerpt</h5></a>:null}
+                {video_excerpt?<a href={video_excerpt} className='btn btn-outline-dark'><h5>Video Excerpt</h5></a>:null}
 
                 </div>
                 <hr/>
