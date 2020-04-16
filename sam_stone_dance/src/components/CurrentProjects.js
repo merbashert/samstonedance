@@ -6,7 +6,7 @@ class CurrentProjects extends React.Component {
         return(
             <div className = 'current-projects'>
             <img src = {moon} id='moon_drop'></img>
-            <iframe width="640" height="385" src="https://www.youtube.com/embed/jhMEFpUtJhs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="640" height="385" src="https://www.youtube.com/embed/jhMEFpUtJhs" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
             </div>
         )
     }
