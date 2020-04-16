@@ -32,7 +32,7 @@ class About extends React.Component {
         if(isLoaded) {
             return(
                 <div className='about'>
-                    <img src = {moon} id='moon_drop'></img>
+                    <img src = {moon} className='moon_drop'></img>
                     <div>
                 <div className = 'positioner'></div>
                     <img src = {imgUrl} alt="sam face" className='bio'></img>

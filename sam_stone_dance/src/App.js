@@ -31,7 +31,7 @@ const App = props => {
 let content = (
         <Router>
             <div>
-                <Navbar className='nav-bar' sticky="top" expand="lg" expanded={expanded}>
+                <Navbar className='nav-bar justify-content-center' sticky="top" expand="lg" expanded={expanded}>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={() => setExpanded(expanded ? false : "expanded")}/>
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="mr-auto">

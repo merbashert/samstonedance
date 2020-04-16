@@ -9,7 +9,7 @@ const Home = props => {
     return (
         <div className="sitename-container">
                 <Image src={banner} alt='banner' id='banner'/>
-                <Image src={moon} alt='moon' id = 'moon'/>
+                <Image src={moon} alt='moon' id = 'moon-swing'/>
         </div>
     )
 }

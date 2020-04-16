@@ -28,7 +28,7 @@ export class SamCreates extends React.Component {
         if(isLoaded) {
             return (
                 <div className = 'sam-creates-container'>
-                    <img src = {moon} id='moon_drop_creates'></img>
+                    <img src = {moon} className='moon_drop' id='moon_creates'></img>
                     <h1 id='evening'>Sam Stone evening length dance works</h1>
                     <div id='evening-project-list'>
                         {samProjectsEvening.map(project => (

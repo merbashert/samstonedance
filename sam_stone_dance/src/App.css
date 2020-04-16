@@ -3,33 +3,7 @@
   src: local('Sofija'), url(./fonts/Sofija.ttf) format('truetype');
 }
 
-/**********NAV BAR**********/
-
-.nav-bar, .navbar-brand{
-
-}
-
-.nav-bar div {
-    margin-bottom: 0px;
-    margin-right: 70px;
-    padding: 5px;
-}
-
-/**********HOME**********/
-#banner{
-    grid-column: 1/4;
-    grid-row-start: 1;
-    width: 100%;
-}
-
-.sitename-container {
-    height: 100%;
-    display: grid;
-    grid-template-columns: 40px 1fr 50%;
-    grid-template-rows: 1fr 60%;
-    overflow: hidden;
-}
-
+/**********ANIMATIONS**********/
 @keyframes rotate {
     0% {
         transform: rotate(10deg);
@@ -41,7 +15,8 @@
         transform: rotate(10deg)
     }
 }
-#moon {
+
+#moon-swing {
     grid-column-start: 2;
     grid-row-start: 1;
     z-index: 1;
@@ -50,10 +25,100 @@
     animation-duration: 3s;
     animation-iteration-count: infinite;
     animation-fill-mode:none;
-    width: 35%;
+    width: 30%;
+}
+
+@keyframes drop {
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.moon_drop {
+    clear: right;
+    transform: translateY(-470px);
+    overflow: hidden;
+    animation: drop 1.5s;
+    animation-fill-mode: forwards;
+    width: 90%;
 }
 
 
+/**********NAV BAR**********/
+.navbar, .nav {
+    background-color: white;
+    display: grid;
+}
+
+.nav-bar a{
+    color: black;
+    text-transform: uppercase;
+    font-family: 'Anton', sans-serif;
+    font-size: 20px;
+}
+
+.nav-bar div {
+    margin: 0px 30px;
+    padding: 5px;
+}
+
+/**********HOME**********/
+#banner{
+    grid-column: 1/4;
+    grid-row-start: 1;
+    width: 100%;
+    margin: auto;
+}
+
+.sitename-container {
+    display: grid;
+    grid-template-columns: 60px 1fr 50%;
+    grid-template-rows: 1fr 60%;
+    overflow: hidden;
+}
+
+/**********ABOUT**********/
+
+.positioner {
+    float: right;
+    width: 0px;
+    height: 200px;
+}
+
+.bio {
+    float: right;
+    clear: right;
+    width: 45%;
+    margin: 10px;
+}
+
+.about {
+    display: grid;
+    grid-template-columns: 20% 1fr;
+    margin: 20px 30px;
+    overflow: hidden;
+}
+
+.about h6 {
+    grid-column-start: 2;
+    font-size: 16px;
+    width: 80%;
+    margin-top: 30px;
+}
+
+@media (max-width: 1080px) {
+    .positioner {
+        height: 250px;
+    }
+}
+
+/**********CURRENT PROJECTS**********/
+.current-projects {
+    display: grid;
+    grid-template-columns: 20% 1fr;
+    margin: 20px 50px;
+    overflow: hidden;
+}
 
 /**********SAM CREATES**********/
 h1 {
@@ -83,6 +148,7 @@ h5 {
 .project-image {
     grid-column-start: 1;
     width: 100%;
+    border: 3px solid black;
 }
 
 .project-info {
@@ -90,14 +156,15 @@ h5 {
     margin-left: 25px;
 }
 
-#moon_drop_creates{
+#moon_creates {
     grid-column-start: 1;
+    width: 80%;
 }
 
 .sam-creates-container {
     display: grid;
-    grid-template-columns: 30% 1fr;
-    grid-template-rows: 50px 1fr 20%;
+    grid-template-columns: 20% 1fr;
+    grid-template-rows: 3% 1fr 20%;
     margin: 30px;
 }
 
@@ -119,54 +186,21 @@ h5 {
     grid-column-start: 2;
     grid-row-start: 3;
 }
-/**********ABOUT**********/
-#moon_drop {
-    clear: right;
-    transform: translateY(-470px);
-    overflow: hidden;
-    animation: drop 1.5s;
-    animation-fill-mode: forwards;
-    width: 90%;
-}
 
-@keyframes drop {
-    100% {
-        transform: translateY(0px);
+@media (max-width: 930px) {
+    #evening {
+        text-align: center;
     }
 }
 
-.positioner {
-    float: right;
-    width: 0px;
-    height: 170px;
+/**********CONTACT**********/
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.bio {
-    float: right;
-    clear: right;
-    width: 35%;
-    margin: 10px;
-}
-
-.about {
-    display: grid;
-    grid-template-columns: 20% 1fr;
-    margin: 20px 30px;
-    overflow: hidden;
-}
-
-.about h6 {
-    grid-column-start: 2;
-    font-size: 16px;
-    width: 80%;
-    margin-top: 30px;
-}
-
-
-/**********CURRENT PROJECTS**********/
-.current-projects {
-    display: grid;
-    grid-template-columns: 20% 1fr;
-    margin: 20px 50px;
-    overflow: hidden;
+#moon_contact {
+    width: 20%;
 }
