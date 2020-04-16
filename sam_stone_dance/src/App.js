@@ -1,8 +1,8 @@
 import React, {useState} from 'react'
 
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Navbar from 'react-bootstrap/Navbar';
-import Nav from 'react-bootstrap/Nav';
+import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
+
 
 
 import Home from './components/Home';
@@ -36,22 +36,25 @@ let content = (
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="mr-auto">
                             <div className='navlink'>
-                                <Link to="/">Home</Link>
+                                <Nav.Link to="/">Home</Nav.Link>
                             </div>
                             <div className='navlink'>
-                                <Link to="/about" onClick={() => setTimeout(() => {setExpanded(false)}, 150)}>About</Link>
+                                <Nav.Link to="/about" onClick={() => setTimeout(() => {setExpanded(false)}, 150)}>About</Nav.Link>
                             </div>
                             <div className='navlink'>
-                                <Link to="/current-projects" onClick={() => setTimeout(() => {setExpanded(false)}, 150)}>Current Projects</Link>
+                                <Nav.Link to="/current-projects" onClick={() => setTimeout(() => {setExpanded(false)}, 150)}>Current Projects</Nav.Link>
                             </div>
                             <div className='navlink'>
-                                <Link to="/sam-creates" onClick={() => setTimeout(() => {setExpanded(false)}, 150)}>Sam Creates</Link>
+                                <Nav.Link to="/sam-creates" onClick={() => setTimeout(() => {setExpanded(false)}, 150)}>Sam Creates</Nav.Link>
                             </div>
                             <div className='navlink'>
-                                <Link to="/sam-teaches" onClick={() => setTimeout(() => {setExpanded(false)}, 150)}>Sam Teaches</Link>
+                                <NavDropdown title = "Sam Teaches" onClick={() => setTimeout(() => {setExpanded(false)}, 150)}>
+                                    <NavDropdown.Item Link to="/sam-teaches-adult">Adult Classes</NavDropdown.Item>
+                                    <NavDropdown.Item Link to="/sam-teaches-child">Child Classes</NavDropdown.Item>
+                                </NavDropdown>
                             </div>
                             <div className='navlink'>
-                                <Link to="/contact" onClick={() => setTimeout(() => {setExpanded(false)}, 150)}>Contact</Link>
+                                <Nav.Link to="/contact" onClick={() => setTimeout(() => {setExpanded(false)}, 150)}>Contact</Nav.Link>
                             </div>
                         </Nav>
                     </Navbar.Collapse>
