@@ -32,7 +32,7 @@ class About extends React.Component {
         if(isLoaded) {
             return(
                 <div className='about'>
-                    <img src = {moon} className='moon_drop'></img>
+                    <img src = {moon} className='moon_drop' alt='moon'></img>
                     <div>
                 <div className = 'positioner'></div>
                     <img src = {imgUrl} alt="sam face" className='bio'></img>
@@ -43,7 +43,7 @@ class About extends React.Component {
                 </div>
             )
         }
-        return <h3>Loading...</h3>
+        return <div id='loading'><h3>Loading...</h3></div>
 
     }
 }

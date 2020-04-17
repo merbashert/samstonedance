@@ -28,17 +28,17 @@ export class SamCreates extends React.Component {
         if(isLoaded) {
             return (
                 <div className = 'sam-creates-container'>
-                    <img src = {moon} className='moon_drop' id='moon_creates'></img>
+                    <img src = {moon} className='moon_drop' id='moon_creates' alt='moon'></img>
                     <h1 id='evening'>Sam Stone evening length dance works</h1>
                     <div id='evening-project-list'>
-                        {samProjectsEvening.map(project => (
+                        {samProjectsEvening.map((project, id) => (
                             <Project key = {project.id} project={project}/>
                         ))}
                     </div>
                     <br/>
                     <div id='other-project-list'>
                     <h1 id='other'>Other dreams and projects</h1>
-                    {samProjectsOther.map(project => (
+                    {samProjectsOther.map((project, id) => (
                         <Project key = {project.id} project={project}/>
                     ))}
                     </div>
@@ -46,7 +46,7 @@ export class SamCreates extends React.Component {
                 </div>
             )
         }
-        return <h3>Loading...</h3>
+        return <div id='loading'><h3>Loading...</h3></div>
     }
 }
 
