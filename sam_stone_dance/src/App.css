@@ -25,7 +25,7 @@
     animation-duration: 3s;
     animation-iteration-count: infinite;
     animation-fill-mode:none;
-    width: 30%;
+    width: 33%;
 }
 
 @keyframes drop {
@@ -40,27 +40,61 @@
     overflow: hidden;
     animation: drop 1.5s;
     animation-fill-mode: forwards;
-    width: 90%;
+    width: 80%;
 }
 
+#loading h3{
+    color: black;
+    font-family: 'Arvo', sans-serif;
+    font-size: 30px;
+}
 
+#loading {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
 /**********NAV BAR**********/
 .navbar, .nav {
-    background-color: white;
-    display: grid;
+    background-color: #ffffff;
+
 }
 
 .nav-bar a {
     color: black;
     text-transform: uppercase;
     font-family: 'Anton', sans-serif;
-    font-size: 20px;
+    font-size: 22px;
 }
 
-.nav-bar div {
-    margin: 0px 30px;
+.nav-bar div.navlink {
+    margin: 0px 20px;
 }
 
+.navbar-light .navbar-nav .nav-link {
+    color: black;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: rgb(0,0,0,.5);
+}
+
+#brand {
+    font-family: 'Sofija', serif;
+    font-size: 28px;
+    color: white;
+    background-color: black;
+    padding: 1px 5px;
+}
+
+#responsive-navbar-nav {
+    display: flex;
+    justify-content: center;
+}
+
+div.mr-auto.navbar-nav {
+    margin: auto;
+}
 /**********HOME**********/
 #banner{
     grid-column: 1/4;
@@ -119,6 +153,11 @@
     overflow: hidden;
 }
 
+#youtube {
+    margin-top: 80px;
+    border: 3px solid black;
+}
+
 /**********SAM CREATES**********/
 h1 {
     font-family: 'Sofija', cursive;
@@ -147,12 +186,41 @@ h5 {
 .project-image {
     grid-column-start: 1;
     width: 100%;
-    border: 3px solid black;
+    height: 350px;
+    border: 4px double black;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-image img {
+    outline: 1px double black;
+    outline-offset: 3px;
 }
 
 .project-info {
     grid-column-start: 2;
     margin-left: 25px;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  filter: invert(1);
+  margin-top:300px;
+}
+
+.carousel-control-next-icon {
+    margin-left: 15px;
+}
+
+.carousel-control-prev-icon {
+    margin-right: 15px;
+}
+
+
+.carousel-indicators {
+    display: none;
 }
 
 #moon_creates {
@@ -186,6 +254,14 @@ h5 {
     grid-row-start: 3;
 }
 
+.btn.btn-outline-dark {
+    border: 4px double black;
+}
+
+.btn.btn-outline-dark h5{
+    margin: 5px;
+}
+
 @media (max-width: 930px) {
     #evening {
         text-align: center;
@@ -204,6 +280,18 @@ h5 {
     width: 20%;
 }
 
-.contact-container h2 {
-    font-family: 'Anton', sans-serif;
+.contact-container h4 {
+    font-family: 'Arvo', sans-serif;
+}
+
+.fa-instagram {
+  background: white;
+  color: black;
+  margin-right: 5px;
+  font-size: 35px;
+}
+
+.instagram {
+    display: flex;
+    align-items: center;
 }

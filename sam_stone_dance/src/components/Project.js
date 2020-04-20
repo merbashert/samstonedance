@@ -16,8 +16,8 @@ export class Project extends React.Component {
 
     componentDidMount() {
         const { featured_media, id } = this.props.project;
-        const getImageUrl = axios.get(`http://localhost:8000/wp-json/wp/v2/media/${featured_media}`);
-        const getImages = axios.get(`http://localhost:8000/wp-json/wp/v2/media?parent=${id}`);
+        const getImageUrl = axios.get(`http://axi.smv.mybluehost.me/wp-json/wp/v2/media/${featured_media}`);
+        const getImages = axios.get(`http://axi.smv.mybluehost.me/wp-json/wp/v2/media?parent=${id}`);
 
         Promise.all([getImageUrl, getImages]).then(res => {
             this.setState({
@@ -40,31 +40,21 @@ export class Project extends React.Component {
         if(isLoaded) {
             return (
                 <div className='project'>
-                    <Carousel indicators='false'>
-                        {imageArray.map((image, id) => {
-                            return imageArray.length > 1 ?
-
-                                <Carousel.Item key={image.id}>
+                    {imageArray.length > 1 ?
+                        <Carousel>
+                            {imageArray.map((image, id) => (
+                                <Carousel.Item key={id}>
                                     <div className='project-image'>
-                                    <img src= {image} style={{width:"80%"}} alt={title.rendered}/>
+                                        <img src={ image} style={{width: "80%"}} alt={title.rendered}/>
                                     </div>
                                 </Carousel.Item>
-
-                            :
-                            <div className='project-image'>
-                            <img src = {imgUrl} style={{width:"80%"}}alt={title.rendered}/>
-                            </div>
-                        })}
-
-
-                    </Carousel>
-
-
-
-
-
-
-
+                            ))}
+                        </Carousel>
+                        :
+                        <div className='project-image'>
+                            <img src={ imgUrl} style={{width: "90%"}}alt={title.rendered}/>
+                        </div>
+                    }
 
                     <div className = 'project-info'>
                         <h3>{ title.rendered }</h3>

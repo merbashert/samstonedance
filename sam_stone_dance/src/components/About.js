@@ -12,8 +12,8 @@ class About extends React.Component {
 
     componentDidMount() {
 
-        const getAbout = axios.get('http://localhost:8000/wp-json/wp/v2/posts/102')
-        const getImageUrl = axios.get('http://localhost:8000/wp-json/wp/v2/media/15')
+        const getAbout = axios.get('http://axi.smv.mybluehost.me/wp-json/wp/v2/posts/102')
+        const getImageUrl = axios.get('http://axi.smv.mybluehost.me/wp-json/wp/v2/media/15')
 
 
         Promise.all([getAbout, getImageUrl]).then(res => {
