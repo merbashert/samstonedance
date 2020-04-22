@@ -12,6 +12,8 @@ import SamCreates from './components/SamCreates';
 import SamTeachesAdult from './components/SamTeachesAdult';
 import SamTeachesChild from './components/SamTeachesChild';
 import Contact from './components/Contact';
+import Footer from './components/Footer';
+
 
 import {
     BrowserRouter as Router,
@@ -82,10 +84,7 @@ const App = props => {
                     <Contact />
                 </Route>
             </Switch>
-            <footer>
-                <h3 className='instagram'><span className='fa fa-instagram'></span><a href = 'https://www.instagram.com/otherdance' target="_blank" rel="noopener noreferrer">@otherdance</a></h3>
-                <h3 className = 'mail'><span className='fa fa-envelope-o'></span><a href = 'mailto:samstone16@gmail.com'>samstone16@gmail.com</a></h3>
-            </footer>
+            <Footer />
         </Router>
     );
     return content;
