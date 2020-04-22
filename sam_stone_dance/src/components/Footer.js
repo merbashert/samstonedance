@@ -14,6 +14,12 @@ const footer = (props) => (
                 </span>
             </a>
         </h3>
+        <h3 className = 'facebook'>
+            <a href = 'https://www.facebook.com/Sam-Stone-Dance-108382910851063'>
+                <span className='fa fa-facebook'>
+                </span>
+            </a>
+        </h3>
     </div>
 )
 

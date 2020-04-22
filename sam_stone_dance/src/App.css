@@ -87,6 +87,7 @@
     color: black;
     padding: 1px 5px;
     margin-left: 40px;
+    margin-top: 10px;
 }
 
 div#responsive-navbar-nav.navbar-collapse.collapse {
@@ -133,11 +134,12 @@ div.mr-auto.navbar-nav {
     color: gold;
 }
 
-.fa-envelope-o, .fa-instagram {
+.fa-envelope-o, .fa-instagram, .fa-facebook {
   margin-right: 5px;
   font-size: 40px;
 }
-.mail {
+
+.mail, .facebook {
     margin-left: 12px;
 }
 

@@ -31,13 +31,11 @@ const App = props => {
     let content = (
         <Router>
             <Navbar className='nav-bar' sticky="top" expand="lg" expanded={expanded}>
-                <Navbar.Brand id='brand'>Sam Stone Dance</Navbar.Brand>
+                <Navbar.Brand id='brand' as = {NavLink} to="/samstonedance/" onClick={() => setTimeout(() => {setExpanded(false)}, 150)}>Sam Stone Dance</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={() => setExpanded(expanded ? false : "expanded")}/>
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="mr-auto">
-                        <div className='navlink'>
-                            <Nav.Link  as = {NavLink} to="/samstonedance/">Home</Nav.Link>
-                        </div>
+
                         <div className='navlink'>
                             <Nav.Link as = {NavLink} to="/samstonedance/about" onClick={() => setTimeout(() => {setExpanded(false)}, 150)}>About</Nav.Link>
                         </div>
