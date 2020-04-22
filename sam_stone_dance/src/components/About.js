@@ -1,6 +1,5 @@
 import React from 'react';
 import axios from 'axios';
-import moon from '../assets/moon.png'
 
 class About extends React.Component {
 
@@ -32,14 +31,9 @@ class About extends React.Component {
         if(isLoaded) {
             return(
                 <div className='about'>
-                    <img src = {moon} className='moon_drop' alt='moon'></img>
-                    <div>
-                <div className = 'positioner'></div>
-                    <img src = {imgUrl} alt="sam face" className='bio'></img>
-                    <h6 dangerouslySetInnerHTML = {{__html: about.content.rendered}}></h6>
-                    </div>
-
-
+                        <div className = 'positioner'></div>
+                        <img src = {imgUrl} alt="sam face" className='bio'></img>
+                        <h6 dangerouslySetInnerHTML = {{__html: about.content.rendered}}></h6>
                 </div>
             )
         }
