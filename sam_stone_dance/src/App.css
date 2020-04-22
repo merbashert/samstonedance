@@ -119,10 +119,19 @@ div.mr-auto.navbar-nav {
 
 /**********FOOTER**********/
 .footer {
-    margin: 5px 10px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    margin-left: 5%;
+    margin-top: 15px;
+    width: 100%;
+    background-color: white;
+    z-index: 50;
+}
+
+.social {
     display: flex;
     flex-wrap: wrap;
-    margin-left: 5%;
 }
 
 .footer h3, a {
@@ -151,37 +160,25 @@ div.mr-auto.navbar-nav {
 
 /**********ABOUT**********/
 
-.positioner {
-    float: right;
-    width: 0px;
-    height: 200px;
-}
-
 .bio {
     float: right;
     clear: right;
-    width: 45%;
-    margin: 10px;
+    width: 30%;
+    margin: 10px 0px 0px 10px;
 }
 
 .about {
-    display: grid;
-    grid-template-columns: 20% 1fr;
-    margin: 20px 30px;
-    overflow: hidden;
+    margin: 0px 40px;
 }
 
 .about h6 {
-    grid-column-start: 2;
-    font-size: 16px;
-    width: 80%;
-    margin-top: 30px;
+    text-align: justify;
 }
 
-@media (max-width: 1080px) {
-    .positioner {
-        height: 250px;
-    }
+.positioner {
+    float: right;
+    width: 0px;
+    height: 100px;
 }
 
 /**********CURRENT PROJECTS**********/
