@@ -163,12 +163,12 @@ div.mr-auto.navbar-nav {
 .bio {
     float: right;
     clear: right;
-    width: 30%;
-    margin: 10px 0px 0px 10px;
+    width: 25%;
+    margin: 10px 0px 200px 10px;
 }
 
 .about {
-    margin: 0px 40px;
+    margin: 30px 62px;
 }
 
 .about h6 {
