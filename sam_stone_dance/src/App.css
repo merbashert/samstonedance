@@ -25,7 +25,8 @@
     animation-duration: 3s;
     animation-iteration-count: infinite;
     animation-fill-mode:none;
-    width: 37%;
+    width: 30%;
+    margin-left: 20px;
 }
 
 @keyframes drop {
@@ -54,6 +55,7 @@
     justify-content: center;
     margin-top: 60px;
 }
+
 /**********NAV BAR**********/
 .navbar, .nav {
     background-color: #ffffff;
@@ -69,7 +71,7 @@
 }
 
 .nav-bar div.navlink {
-    margin: 0px 16px;
+    margin: 0px 5px;
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -83,15 +85,15 @@
 
 #brand {
     font-family: 'Sofija', serif;
-    font-size: 40px;
+    font-size: 50px;
     color: black;
     padding: 1px 5px;
-    margin-left: 40px;
+    margin-left: 130px;
     margin-top: 10px;
 }
 
 div#responsive-navbar-nav.navbar-collapse.collapse {
-    justify-content: flex-end;
+    margin-left: 50px;
 }
 
 div.mr-auto.navbar-nav {
@@ -111,24 +113,24 @@ div.mr-auto.navbar-nav {
 #banner{
     grid-column: 1/4;
     grid-row-start: 1;
-    width: 90%;
+    width: 80%;
     margin: auto;
 }
 
 .sitename-container {
     display: grid;
-    grid-template-columns: 140px 1fr 45%;
+    grid-template-columns: 200px 1fr 40%;
     grid-template-rows: 1fr 60%;
     overflow: hidden;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 /**********FOOTER**********/
 .footer {
     position: fixed;
-    left: 0;
+    right: 0;
     bottom: 0;
-    margin-left: 5%;
+    margin-left: 10%;
     margin-top: 15px;
     width: 100%;
     background-color: white;
@@ -169,16 +171,19 @@ div.mr-auto.navbar-nav {
 .bio {
     float: right;
     clear: right;
-    width: 25%;
+    width: 30%;
     margin: 10px 0px 200px 20px;
+    border: 3px solid black;
 }
 
 .about {
-    margin: 30px 5%;
+    margin: 30px 9%;
 }
 
 .about h6 {
     text-align: justify;
+    font-family: 'Arvo', serif;
+    line-height: 150%;
 }
 
 .positioner {
