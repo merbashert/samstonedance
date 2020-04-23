@@ -115,6 +115,7 @@ div.mr-auto.navbar-nav {
     grid-template-columns: 140px 1fr 45%;
     grid-template-rows: 1fr 60%;
     overflow: hidden;
+    margin-top: 20px;
 }
 
 /**********FOOTER**********/
@@ -164,11 +165,11 @@ div.mr-auto.navbar-nav {
     float: right;
     clear: right;
     width: 25%;
-    margin: 10px 0px 200px 10px;
+    margin: 10px 0px 200px 20px;
 }
 
 .about {
-    margin: 30px 62px;
+    margin: 30px 5%;
 }
 
 .about h6 {
