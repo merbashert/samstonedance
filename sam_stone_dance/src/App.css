@@ -180,16 +180,16 @@ div.mr-auto.navbar-nav {
     color: gold;
 }
 
-.fa-envelope-o, .fa-instagram, .fa-facebook {
+.fa-envelope-o, .fa-instagram, .fa-facebook, .fa-youtube {
   margin-right: 5px;
   font-size: 40px;
 }
 
-.mail, .facebook {
+.mail, .facebook, .youtube {
     margin-left: 12px;
 }
 
-.instagram, .mail {
+.instagram, .mail, .youtube {
     display: flex;
     align-items: center;
 }
@@ -206,7 +206,7 @@ div.mr-auto.navbar-nav {
 }
 
 .about {
-    margin: 30px 0px;
+    margin: 90px 0px;
 }
 
 .about h6 {

@@ -21,6 +21,12 @@ const footer = (props) => (
                     </span>
                 </a>
             </h3>
+            <h3 className = 'youtube'>
+                <a href = '#'>
+                    <span className='fa fa-youtube'>
+                    </span>
+                </a>
+            </h3>
         </div>
     </div>
 )
