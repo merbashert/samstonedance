@@ -19,13 +19,13 @@ const Navigation = props => {
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="mr-auto">
                         <div className='navlink'>
-                            <Nav.Link as = {NavLink} to="/samstonedance/about" onClick={() => setTimeout(() => {setExpanded(false)}, 150)}>About</Nav.Link>
+                            <Nav.Link as = {NavLink} to="/samstonedance/about" activeClassName='active' onClick={() => setTimeout(() => {setExpanded(false)}, 150)}>About</Nav.Link>
                         </div>
                         <div className='navlink'>
-                            <Nav.Link as = {NavLink} to="/samstonedance/current-projects" onClick={() => setTimeout(() => {setExpanded(false)}, 150)}>Current Projects</Nav.Link>
+                            <Nav.Link as = {NavLink} to="/samstonedance/current-projects" activeClassName='active' onClick={() => setTimeout(() => {setExpanded(false)}, 150)}>Current Projects</Nav.Link>
                         </div>
                         <div className='navlink'>
-                            <Nav.Link as = {NavLink} to="/samstonedance/sam-creates" onClick={() => setTimeout(() => {setExpanded(false)}, 150)}>Sam Creates</Nav.Link>
+                            <Nav.Link as = {NavLink} to="/samstonedance/sam-creates" activeClassName='active' onClick={() => setTimeout(() => {setExpanded(false)}, 150)}>Sam Creates</Nav.Link>
                         </div>
                         <div className='navlink'>
                             <NavDropdown title = "Sam Teaches">
@@ -34,7 +34,7 @@ const Navigation = props => {
                             </NavDropdown>
                         </div>
                         <div className='navlink'>
-                            <Nav.Link  as = {NavLink} to="/samstonedance/contact" onClick={() => setTimeout(() => {setExpanded(false)}, 150)}>Contact</Nav.Link>
+                            <Nav.Link  as = {NavLink} to="/samstonedance/contact" activeClassName='active' onClick={() => setTimeout(() => {setExpanded(false)}, 150)}>Contact</Nav.Link>
                         </div>
                     </Nav>
                 </Navbar.Collapse>

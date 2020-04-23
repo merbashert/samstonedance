@@ -45,14 +45,14 @@ export class Project extends React.Component {
                             {imageArray.map((image, id) => (
                                 <Carousel.Item key={id}>
                                     <div className='project-image'>
-                                        <img src={ image} style={{width: "80%"}} alt={title.rendered}/>
+                                        <img src={ image} alt={title.rendered}/>
                                     </div>
                                 </Carousel.Item>
                             ))}
                         </Carousel>
                         :
                         <div className='project-image'>
-                            <img src={ imgUrl} style={{width: "90%"}}alt={title.rendered}/>
+                            <img src={ imgUrl} alt={title.rendered}/>
                         </div>
                     }
 
