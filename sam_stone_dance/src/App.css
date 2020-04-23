@@ -98,9 +98,14 @@ div.mr-auto.navbar-nav {
     margin-right: 0px!important
 }
 
-@media (max-width: 1240px) {
+.navbar-toggler, .navbar-toggler.collapsed {
+    margin-right: 20px;
+}
 
-
+@media (max-width: 400px) {
+    #brand {
+        margin-left: 10px;
+    }
 }
 /**********HOME**********/
 #banner{
@@ -299,9 +304,107 @@ h5 {
     margin: 5px;
 }
 
+@media (max-width: 1100px) {
+    .project-image {
+        height: 200px;
+    }
+    .carousel-control-next-icon {
+        margin-left: 10px;
+        margin-top: 170px;
+    }
+
+    .carousel-control-prev-icon {
+        margin-right: 10px;
+        margin-top: 170px;
+    }
+
+}
+
 @media (max-width: 930px) {
     #evening {
         text-align: center;
+    }
+
+    .project-image {
+        height: 200px;
+    }
+
+    .carousel-control-next-icon {
+        margin-left: 8px;
+        width: 15px;
+    }
+
+    .carousel-control-prev-icon {
+        margin-right: 8px;
+        width: 15px;
+
+    }
+}
+
+@media (max-width: 745px) {
+    .carousel-control-next-icon {
+        margin-left: 5px;
+        width: 10px;
+    }
+
+    .carousel-control-prev-icon {
+        margin-right: 5px;
+        width: 10px;
+
+    }
+}
+
+@media (max-width: 580px) {
+    .carousel-control-next-icon {
+        margin-left: 3px;
+        width: 7px;
+    }
+
+    .carousel-control-prev-icon {
+        margin-right: 3px;
+        width: 7px;
+
+    }
+}
+
+@media (max-width: 400px) {
+
+    .moon_drop {
+        display: none;
+    }
+
+    .project {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .project-image {
+        margin-bottom: 10px;
+    }
+
+    .carousel-control-next-icon,
+    .carousel-control-prev-icon {
+      margin-top: 0px;
+    }
+
+    .carousel-control-next-icon {
+        margin-left: 8px;
+        width: 15px;
+    }
+
+    .carousel-control-prev-icon {
+        margin-right: 8px;
+        width: 15px;
+    }
+
+    .sam-creates-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sam-creates-container h1 {
+        font-size: 30px;
     }
 }
 
