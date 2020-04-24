@@ -446,17 +446,18 @@ h5 {
 /**********CONTACT**********/
 .contact-container {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     transform: translateY(-470px);
     overflow: hidden;
     animation: drop 1.5s;
     animation-fill-mode: forwards;
+    margin-left: 15px;
 }
 
 .contact-container h4, a {
     font-family: 'Arvo', serif;
-    font-size: 20px;
+    font-size: 30px;
 }
 
 .contact-info {
@@ -464,7 +465,7 @@ h5 {
 }
 
 #moon_contact {
-    width: 25%;
+    width: 30%;
 }
 
 @media (max-width: 1180px) {
