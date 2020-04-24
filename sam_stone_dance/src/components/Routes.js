@@ -6,6 +6,7 @@ import Home from './Home';
 import About from './About';
 import CurrentProjects from './CurrentProjects';
 import SamCreates from './SamCreates';
+import SamTeachPhilosophy from './SamTeachPhilosophy';
 import SamTeachesAdult from './SamTeachesAdult';
 import SamTeachesChild from './SamTeachesChild';
 import Contact from './Contact';
@@ -25,6 +26,9 @@ export default function Routes() {
             </Route>
             <Route path="/samstonedance/sam-creates">
                 <SamCreates />
+            </Route>
+            <Route path="/samstonedance/teaching-philosophy">
+                <SamTeachPhilosophy />
             </Route>
             <Route path="/samstonedance/sam-teaches-adult">
                 <SamTeachesAdult />
