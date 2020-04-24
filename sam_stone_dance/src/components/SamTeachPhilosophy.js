@@ -2,16 +2,16 @@ import React from 'react'
 
 import axios from 'axios';
 
-class SamTeachesChild extends React.Component {
+class SamTeachPhilosophy extends React.Component {
     state = {
-        childTeach: '',
+        teachPhilosophy: '',
         isLoaded: false
     }
 
     componentDidMount() {
-        axios.get('http://axi.smv.mybluehost.me/wp-json/wp/v2/posts/113')
+        axios.get('http://axi.smv.mybluehost.me/wp-json/wp/v2/posts/109')
         .then(res => this.setState({
-            childTeach: res.data,
+            teachPhilosophy: res.data,
             isLoaded: true
         }))
         .catch(err => console.log(err));
@@ -19,11 +19,11 @@ class SamTeachesChild extends React.Component {
 
 
     render () {
-        const { childTeach, isLoaded } = this.state;
+        const { teachPhilosophy, isLoaded } = this.state;
         if(isLoaded) {
             return(
                 <div className='adult-teach'>
-                <h6 dangerouslySetInnerHTML = {{__html: childTeach.content.rendered}}></h6>
+                <h6 dangerouslySetInnerHTML = {{__html: teachPhilosophy.content.rendered}}></h6>
                 </div>
             )
         }
@@ -32,4 +32,4 @@ class SamTeachesChild extends React.Component {
     }
 }
 
-export default SamTeachesChild;
+export default SamTeachPhilosophy;

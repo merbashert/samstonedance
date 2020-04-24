@@ -16,13 +16,13 @@ const footer = (props) => (
                 </a>
             </h3>
             <h3 className = 'facebook'>
-                <a href = 'https://www.facebook.com/Sam-Stone-Dance-108382910851063'>
+                <a href = 'https://www.facebook.com/Sam-Stone-Dance-108382910851063' target="_blank" rel="noopener noreferrer">
                     <span className='fa fa-facebook'>
                     </span>
                 </a>
             </h3>
             <h3 className = 'youtube'>
-                <a href = '#'>
+                <a href = 'https://www.youtube.com/channel/UCGEu46ySZPvZM4XlON77PlA?view_as=subscriber' target="_blank" rel="noopener noreferrer">
                     <span className='fa fa-youtube'>
                     </span>
                 </a>
