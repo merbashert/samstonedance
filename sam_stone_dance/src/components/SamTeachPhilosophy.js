@@ -2,6 +2,8 @@ import React from 'react'
 
 import axios from 'axios';
 
+import cv from '../assets/CV.pdf'
+
 class SamTeachPhilosophy extends React.Component {
     state = {
         teachPhilosophy: '',
@@ -22,8 +24,10 @@ class SamTeachPhilosophy extends React.Component {
         const { teachPhilosophy, isLoaded } = this.state;
         if(isLoaded) {
             return(
-                <div className='adult-teach'>
-                <h6 dangerouslySetInnerHTML = {{__html: teachPhilosophy.content.rendered}}></h6>
+                <div className='teaching-philosophy'>
+                    <h6 dangerouslySetInnerHTML = {{__html: teachPhilosophy.content.rendered}}></h6>
+
+                    <h4 className='cv'><span className='fa fa-arrow-circle-o-down'></span><a href = {cv} download>Download Teaching CV</a></h4>
                 </div>
             )
         }

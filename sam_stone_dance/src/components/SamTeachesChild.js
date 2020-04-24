@@ -22,7 +22,7 @@ class SamTeachesChild extends React.Component {
         const { childTeach, isLoaded } = this.state;
         if(isLoaded) {
             return(
-                <div className='adult-teach'>
+                <div className='child-teach'>
                 <h6 dangerouslySetInnerHTML = {{__html: childTeach.content.rendered}}></h6>
                 </div>
             )

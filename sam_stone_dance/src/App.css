@@ -29,13 +29,7 @@
     animation-iteration-count: infinite;
     animation-fill-mode:none;
     max-width: 33%;
-    margin-left: 20px;
-}
-
-@media (min-width: 1540px) {
-    #moon-swing {
-        margin-left: 70px;
-    }
+    margin-left: 5px;
 }
 
 @keyframes drop {
@@ -151,13 +145,13 @@ div.mr-auto.navbar-nav {
 #banner{
     grid-column: 1/4;
     grid-row-start: 1;
-    max-width: 100%;
+    width: 100%;
     margin: auto;
 }
 
 .sitename-container {
     display: grid;
-    grid-template-columns: 4% 1fr 40%;
+    grid-template-columns: 50px 1fr 40%;
     grid-template-rows: 1fr 60%;
     overflow: hidden;
     margin-top: 20px;
@@ -177,7 +171,7 @@ div.mr-auto.navbar-nav {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
-    margin-right: 9.5%;
+    margin-right: 115px;
     margin-top: 10px;
 }
 
@@ -430,9 +424,22 @@ h5 {
 
 /**********SAM TEACHES**********/
 
-.adult-teach, .child-teach {
+.adult-teach, .child-teach, .teaching-philosophy {
     margin-top: 40px;
     font-family: 'Arvo', serif;
+}
+
+.adult-teach h3, .child-teach h3 {
+    color: black;
+}
+
+.adult-teach h6 {
+    border: 2px solid black;
+    padding: 5px;
+}
+
+.adult-teach a, .child-teach a {
+    font-size: 16px;
 }
 
 
