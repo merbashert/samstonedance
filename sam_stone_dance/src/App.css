@@ -253,9 +253,6 @@ div.mr-auto.navbar-nav {
 }
 
 @media (max-width: 991px) {
-    .about {
-        margin: 30px 0px;
-    }
 
     .bio {
         margin-bottom: 20px;
@@ -271,7 +268,7 @@ div.mr-auto.navbar-nav {
 }
 
 #youtube {
-    margin-top: 80px;
+    margin-top: 90px;
     border: 3px solid black;
 }
 
@@ -294,7 +291,7 @@ h5 {
 }
 
 .sam-creates-container {
-    margin-top: 70px;
+    margin-top: 90px;
 }
 
 .project {
@@ -462,7 +459,7 @@ h5 {
 /**********SAM TEACHES**********/
 
 .adult-teach, .child-teach, .teaching-philosophy {
-    margin-top: 40px;
+    margin-top: 90px;
     font-family: 'Arvo', serif;
 }
 
