@@ -270,10 +270,10 @@ div.mr-auto.navbar-nav {
 #youtube {
     margin-top: 90px;
     border: 40px solid transparent;
-    border-image: url(assets/frame.png) 19% 15% 19% 15% round;
-    border-image-repeat: stretch;
-
+    border-image: url(assets/frame.png) 24% 17% round;
+    border-image-width: 60px;
 }
+
 
 
 /**********SAM CREATES**********/
