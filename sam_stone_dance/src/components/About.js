@@ -11,14 +11,13 @@ class About extends React.Component {
 
     componentDidMount() {
 
-        const getAbout = axios.get('http://axi.smv.mybluehost.me/wp-json/wp/v2/posts/102')
-        const getImageUrl = axios.get('http://axi.smv.mybluehost.me/wp-json/wp/v2/media/15')
+        const getAbout = axios.get('http://axi.smv.mybluehost.me/wp-json/wp/v2/posts/102?_embed')
 
 
-        Promise.all([getAbout, getImageUrl]).then(res => {
+        Promise.all([getAbout]).then(res => {
             this.setState({
                 about: res[0].data,
-                imgUrl: res[1].data.media_details.sizes.full.source_url,
+                imgUrl: res[0].data._embedded['wp:featuredmedia']['0'].source_url,
                 isLoaded: true
             })
         });
@@ -31,6 +30,8 @@ class About extends React.Component {
         if(isLoaded) {
             return(
                 <div className='about'>
+                    <h2 className = 'bio-headline'>Bio</h2>
+                    <hr />
                         <div className = 'positioner'></div>
                         <img src = {imgUrl} alt="sam face" className='bio'></img>
                         <h6 dangerouslySetInnerHTML = {{__html: about.content.rendered}}></h6>
