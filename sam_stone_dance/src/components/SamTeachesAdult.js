@@ -6,13 +6,14 @@ class SamTeachesAdult extends React.Component {
     state = {
         adultTeach: '',
         oneOnOne: '',
+        image: '',
         isLoaded: false
     }
 
 
     componentDidMount() {
 
-        const getAdultTeach = axios.get('http://axi.smv.mybluehost.me/wp-json/wp/v2/posts/111')
+        const getAdultTeach = axios.get('http://axi.smv.mybluehost.me/wp-json/wp/v2/posts/111?_embed')
         const getOneOnOne = axios.get('http://axi.smv.mybluehost.me/wp-json/wp/v2/posts/125')
 
 
@@ -20,6 +21,7 @@ class SamTeachesAdult extends React.Component {
             this.setState({
                 adultTeach: res[0].data,
                 oneOnOne: res[1].data,
+                image: res[0].data._embedded['wp:featuredmedia']['0'].source_url,
                 isLoaded: true
             })
         });
@@ -27,10 +29,11 @@ class SamTeachesAdult extends React.Component {
 
 
     render () {
-        const { adultTeach, oneOnOne, isLoaded } = this.state;
+        const { adultTeach, oneOnOne, image, isLoaded } = this.state;
         if(isLoaded) {
             return(
                 <div className='adult-teach'>
+                    <img src = {image} alt = 'Sam leg extended' className = 'adult-teach-photo'/>
                 <h6 dangerouslySetInnerHTML = {{__html: adultTeach.content.rendered}}></h6>
                 <h6 dangerouslySetInnerHTML = {{__html: oneOnOne.content.rendered}}></h6>
                 </div>
