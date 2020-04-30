@@ -219,8 +219,18 @@ div.mr-auto.navbar-nav {
     align-items: center;
 }
 
+.cv a {
+    font-size: 16px;
+}
 
 /**********ABOUT**********/
+
+.bio-headline {
+    font-family: 'Arvo', serif;
+    color: #943616;
+    font-size: 16px;
+    font-weight: bolder;
+}
 
 .bio {
     float: right;
@@ -238,6 +248,7 @@ div.mr-auto.navbar-nav {
     text-align: justify;
     font-family: 'Arvo', serif;
     line-height: 150%;
+    font-size: 16px;
 }
 
 .positioner {
@@ -263,8 +274,6 @@ div.mr-auto.navbar-nav {
 .current-projects {
     display: flex;
     justify-content: center;
-    margin-top: 30px;
-
 }
 
 #youtube {
@@ -285,13 +294,12 @@ h3 {
     font-family: 'Arvo', serif;
     margin: 2px, 0px;
     color: #943616;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 600;
 }
 
-h5 {
+h6 {
     font-family: 'Arvo', serif;
-    font-size: 20px;
 }
 
 .sam-creates-container {
@@ -468,12 +476,50 @@ h5 {
 }
 
 .adult-teach h3, .child-teach h3 {
-    color: black;
+    font-family: 'Arvo', serif;
+    margin: 2px, 0px;
+    color: #943616;
+    font-size: 16px;
+    font-weight: 600;
 }
 
-.adult-teach h6 {
-    border: 2px solid black;
-    padding: 5px;
+.adult-teach p, .child-teach p {
+    line-height: 150%;
+}
+
+#mail-link {
+    text-align: center;
+}
+
+#mail-link a {
+    font-size: 22px;
+}
+
+.adult-teach-photo {
+    width: 50%;
+    float: right;
+    margin: 8px;
+}
+
+.adult-teach hr {
+    text-align: left;
+    margin-right: 53%;
+}
+
+.teaching-philosophy hr{
+    margin: 5px;
+}
+#one-on-one {
+    width: 100%;
+}
+
+.child-teach-photo {
+    float: left;
+    margin-right: 8px;
+}
+
+.teach-philosophy-photo {
+    width: 100%;
 }
 
 .adult-teach a, .child-teach a {
