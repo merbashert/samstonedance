@@ -58,12 +58,12 @@ export class Project extends React.Component {
 
                     <div className = 'project-info'>
                         <h3>{ title.rendered }</h3>
-                        <h5>{ choreographer }</h5>
-                        <h5>{ description }</h5>
-                        <h5>{ performed_by }</h5>
-                        <h5>{ music_by }</h5>
-                        <h5>{ performance_date }</h5>
-                        {video_excerpt?<a href={video_excerpt} className='btn btn-outline-dark'><h5>Video Excerpt</h5></a>:null}
+                        <h6>{ choreographer }</h6>
+                        <h6>{ description }</h6>
+                        <h6>{ performed_by }</h6>
+                        <h6>{ music_by }</h6>
+                        <h6>{ performance_date }</h6>
+                        {video_excerpt?<a href={video_excerpt} className='btn btn-outline-dark' target="_blank" rel="noopener noreferrer"><h6>Video Excerpt</h6></a>:null}
 
                     </div>
                     <hr/>
