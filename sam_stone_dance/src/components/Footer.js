@@ -10,7 +10,7 @@ const footer = (props) => (
                 </a>
             </h3>
             <h3 className = 'mail'>
-                <a href = 'mailto:samstone16@gmail.com'>
+                <a href = 'mailto:samstonedance@gmail.com'>
                     <span className='fa fa-envelope-o'>
                     </span>
                 </a>
