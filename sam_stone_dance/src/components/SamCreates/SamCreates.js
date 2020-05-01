@@ -2,6 +2,8 @@ import React from 'react';
 import Project from './Project';
 import axios from 'axios';
 
+import './SamCreates.css'
+
 export class SamCreates extends React.Component {
     state = {
         samProjectsEvening: {},

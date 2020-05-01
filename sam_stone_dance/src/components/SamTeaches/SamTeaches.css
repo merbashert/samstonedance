@@ -1,0 +1,61 @@
+.adult-teach, .child-teach, .teaching-philosophy {
+    margin-top: 90px;
+    font-family: 'Arvo', serif;
+}
+
+.adult-teach h3, .child-teach h3 {
+    font-family: 'Arvo', serif;
+    margin: 2px, 0px;
+    color: #943616;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.adult-teach p, .child-teach p {
+    line-height: 150%;
+}
+
+.child-teach hr {
+    margin: 8px 0px;
+}
+
+#mail-link {
+    text-align: center;
+}
+
+#mail-link a {
+    font-size: 22px;
+}
+
+.adult-teach-photo {
+    width: 50%;
+    float: right;
+    margin: 8px;
+    box-shadow: 3px 4px 5px lightgrey;
+}
+
+.adult-teach hr {
+    text-align: left;
+    margin-right: 53%;
+}
+
+.teaching-philosophy hr{
+    margin: 5px;
+}
+#one-on-one {
+    width: 100%;
+}
+
+.child-teach-photo {
+    float: left;
+    margin-right: 8px;
+    border: 2px solid rgb(211, 211, 211, .7);
+}
+
+.teach-philosophy-photo {
+    width: 100%;
+}
+
+.adult-teach a, .child-teach a {
+    font-size: 16px;
+}

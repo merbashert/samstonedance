@@ -2,14 +2,14 @@ import React from 'react'
 
 import { Switch, Route } from "react-router-dom";
 
-import Home from './Home';
-import About from './About';
-import CurrentProjects from './CurrentProjects';
-import SamCreates from './SamCreates';
-import SamTeachPhilosophy from './SamTeachPhilosophy';
-import SamTeachesAdult from './SamTeachesAdult';
-import SamTeachesChild from './SamTeachesChild';
-import Contact from './Contact';
+import Home from '../Home/Home';
+import About from '../About/About';
+import CurrentProjects from '../CurrentProjects/CurrentProjects';
+import SamCreates from '../SamCreates/SamCreates';
+import SamTeachPhilosophy from '../SamTeaches/SamTeachPhilosophy';
+import SamTeachesAdult from '../SamTeaches/SamTeachesAdult';
+import SamTeachesChild from '../SamTeaches/SamTeachesChild';
+import Contact from '../Contact/Contact';
 
 
 export default function Routes() {

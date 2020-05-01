@@ -2,6 +2,8 @@ import React from 'react'
 
 import axios from 'axios';
 
+import './SamTeaches.css'
+
 class SamTeachesChild extends React.Component {
     state = {
         childTeach: '',

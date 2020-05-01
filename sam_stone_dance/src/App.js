@@ -2,9 +2,9 @@ import React from 'react'
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import Routes from './components/Routes';
-import Footer from './components/Footer';
-import Navigation from './components/Navigation';
+import Routes from './components/Main/Routes';
+import Footer from './components/Main/Footer';
+import Navigation from './components/Main/Navigation';
 
 
 import {

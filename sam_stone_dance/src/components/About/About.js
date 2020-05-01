@@ -1,6 +1,8 @@
 import React from 'react';
 import axios from 'axios';
 
+import './About.css'
+
 class About extends React.Component {
 
     state = {

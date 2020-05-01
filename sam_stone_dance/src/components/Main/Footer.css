@@ -1,0 +1,43 @@
+.footer {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 50;
+}
+
+.social {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    margin-right: 115px;
+    margin-top: 10px;
+}
+
+.footer h3, a {
+    font-size: 20px;
+    color: black;
+}
+
+.footer h3, a:hover {
+    color: gold;
+}
+
+.fa-envelope-o, .fa-instagram, .fa-facebook, .fa-youtube, .fa-arrow-circle-o-down {
+  margin-right: 5px;
+  font-size: 40px;
+}
+
+.mail, .facebook, .youtube {
+    margin-left: 12px;
+}
+
+.instagram, .mail, .youtube, .cv {
+    display: flex;
+    align-items: center;
+}
+
+.cv a {
+    font-size: 16px;
+}

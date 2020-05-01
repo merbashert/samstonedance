@@ -1,0 +1,46 @@
+/**********ABOUT**********/
+
+.bio-headline {
+    font-family: 'Arvo', serif;
+    color: #943616;
+    font-size: 16px;
+    font-weight: bolder;
+}
+
+.bio {
+    float: right;
+    clear: right;
+    width: 30%;
+    margin: 10px 0px 200px 20px;
+    border: 2px solid rgb(211, 211, 211, .7);
+}
+
+.about {
+    margin: 90px 0px;
+}
+
+.about h6 {
+    text-align: justify;
+    font-family: 'Arvo', serif;
+    line-height: 150%;
+    font-size: 16px;
+}
+
+.positioner {
+    float: right;
+    width: 0px;
+    height: 100px;
+}
+
+@media (max-width: 1200px) {
+    .about {
+        margin: 40px 0px;
+    }
+}
+
+@media (max-width: 991px) {
+
+    .bio {
+        margin-bottom: 20px;
+    }
+}

@@ -2,7 +2,8 @@ import React from 'react'
 
 import axios from 'axios';
 
-import cv from '../assets/CV.pdf'
+import cv from '../../assets/CV.pdf'
+import './SamTeaches.css'
 
 class SamTeachPhilosophy extends React.Component {
     state = {

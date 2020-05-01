@@ -1,0 +1,28 @@
+#banner{
+    grid-column: 1/4;
+    grid-row-start: 1;
+    width: 100%;
+    margin: auto;
+}
+
+.sitename-container {
+    display: grid;
+    grid-template-columns: 50px 1fr 40%;
+    grid-template-rows: 1fr 60%;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+
+#moon-swing {
+    grid-column-start: 2;
+    grid-row-start: 1;
+    z-index: 1;
+    transform-origin: top;
+    animation-name: rotate;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-fill-mode:none;
+    max-width: 33%;
+    margin-left: 5px;
+}
