@@ -237,7 +237,7 @@ div.mr-auto.navbar-nav {
     clear: right;
     width: 30%;
     margin: 10px 0px 200px 20px;
-    border: 3px solid black;
+    border: 2px solid rgb(211, 211, 211, .7);
 }
 
 .about {
@@ -278,9 +278,9 @@ div.mr-auto.navbar-nav {
 
 #youtube {
     margin-top: 90px;
-    border: 40px solid transparent;
-    border-image: url(assets/frame.png) 24% 17% round;
-    border-image-width: 60px;
+    border: 58px solid transparent;
+    border-image: url(assets/frame.png) 16% 20% round;
+    border-image-width: 58px;
 }
 
 
@@ -487,6 +487,10 @@ h6 {
     line-height: 150%;
 }
 
+.child-teach hr {
+    margin: 8px 0px;
+}
+
 #mail-link {
     text-align: center;
 }
@@ -499,6 +503,7 @@ h6 {
     width: 50%;
     float: right;
     margin: 8px;
+    box-shadow: 3px 4px 5px lightgrey;
 }
 
 .adult-teach hr {
@@ -516,6 +521,7 @@ h6 {
 .child-teach-photo {
     float: left;
     margin-right: 8px;
+    border: 2px solid rgb(211, 211, 211, .7);
 }
 
 .teach-philosophy-photo {
