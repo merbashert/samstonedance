@@ -1,0 +1,11 @@
+.dance-reel {
+    display: flex;
+    justify-content: center;
+}
+
+#youtube {
+    margin-top: 90px;
+    border: 58px solid transparent;
+    border-image: url(../../assets/frame.png) 16% 20% round;
+    border-image-width: 57.5px;
+}
