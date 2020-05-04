@@ -109,3 +109,18 @@ div.mr-auto.navbar-nav {
         margin-left: 10px;
     }
 }
+
+a.dropdown-item {
+    text-align: center;
+    background-color: white;
+}
+
+a.dropdown-item.active {
+    text-align: center;
+    background-color: white;
+    color: gold;
+}
+
+.dropdown-item.active {
+    background-color: white;
+}

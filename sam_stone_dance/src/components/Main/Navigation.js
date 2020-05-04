@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Navbar, Nav, NavDropdown} from 'react-bootstrap';
+import { Navbar, Nav, NavDropdown, Dropdown} from 'react-bootstrap';
 
 import './Navigation.css'
 
@@ -21,8 +21,8 @@ const Navigation = props => {
                     <Nav className="mr-auto">
                         <div className='navlink'>
                             <NavDropdown title = "About">
-                            <Nav.Link as = {NavLink} to="/samstonedance/about" activeClassName='active' onClick={() => setTimeout(() => {setExpanded(false)}, 150)}>Bio</Nav.Link>
-                            <Nav.Link as = {NavLink} to="/samstonedance/dance-reel"onClick={() => setTimeout(() => {setExpanded(false)}, 150)}>Dance Reel</Nav.Link>
+                            <Dropdown.Item as = {NavLink} to="/samstonedance/about" activeClassName='active' onClick={() => setTimeout(() => {setExpanded(false)}, 150)}>Bio</Dropdown.Item>
+                            <Dropdown.Item as = {NavLink} to="/samstonedance/dance-reel"onClick={() => setTimeout(() => {setExpanded(false)}, 150)}>Dance Reel</Dropdown.Item>
                             </NavDropdown>
                         </div>
                         <div className='navlink'>
@@ -33,9 +33,9 @@ const Navigation = props => {
                         </div>
                         <div className='navlink'>
                             <NavDropdown title = "Sam Teaches">
-                                <Nav.Link  as = {NavLink} to="/samstonedance/sam-teaches-adult">Adult Classes</Nav.Link>
-                                <Nav.Link as = {NavLink}  to="/samstonedance/sam-teaches-child">Child Classes</Nav.Link>
-                                <Nav.Link  as = {NavLink} to="/samstonedance/teaching-philosophy">Teaching Philosophy</Nav.Link>
+                                <Dropdown.Item  as = {NavLink} to="/samstonedance/sam-teaches-adult">Adult Classes</Dropdown.Item>
+                                <Dropdown.Item as = {NavLink}  to="/samstonedance/sam-teaches-child">Child Classes</Dropdown.Item>
+                                <Dropdown.Item  as = {NavLink} to="/samstonedance/teaching-philosophy">Teaching Philosophy</Dropdown.Item>
                             </NavDropdown>
                         </div>
                         <div className='navlink'>
