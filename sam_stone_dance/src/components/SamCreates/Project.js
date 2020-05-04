@@ -31,7 +31,7 @@ export class Project extends React.Component {
 
     render () {
         const { title } = this.props.project;
-        const { choreographer, description, performed_by, music_by, performance_date, video_excerpt } = this.props.project.acf;
+        const { choreographer, additional_collaborator_1, additional_collaborator_2, additional_collaborator_3, additional_collaborator_4, description, performed_by, music_by, performance_date, video_excerpt } = this.props.project.acf;
         const { imgUrl, images, isLoaded} = this.state;
         const imageArray = [];
         for(let i = 0; i < images.length; i++) {
@@ -59,6 +59,10 @@ export class Project extends React.Component {
                     <div className = 'project-info'>
                         <h3>{ title.rendered }</h3>
                         <h6>{ choreographer }</h6>
+                        <h6>{ additional_collaborator_1 }</h6>
+                        <h6>{ additional_collaborator_2 }</h6>
+                        <h6>{ additional_collaborator_3 }</h6>
+                        <h6>{ additional_collaborator_4 }</h6>
                         <h6>{ description }</h6>
                         <h6>{ performed_by }</h6>
                         <h6>{ music_by }</h6>
