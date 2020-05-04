@@ -20,7 +20,10 @@ const Navigation = props => {
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="mr-auto">
                         <div className='navlink'>
-                            <Nav.Link as = {NavLink} to="/samstonedance/about" activeClassName='active' onClick={() => setTimeout(() => {setExpanded(false)}, 150)}>About</Nav.Link>
+                            <NavDropdown title = "About">
+                            <Nav.Link as = {NavLink} to="/samstonedance/about" activeClassName='active' onClick={() => setTimeout(() => {setExpanded(false)}, 150)}>Bio</Nav.Link>
+                            <Nav.Link as = {NavLink} to="/samstonedance/dance-reel"onClick={() => setTimeout(() => {setExpanded(false)}, 150)}>Dance Reel</Nav.Link>
+                            </NavDropdown>
                         </div>
                         <div className='navlink'>
                             <Nav.Link as = {NavLink} to="/samstonedance/current-projects"onClick={() => setTimeout(() => {setExpanded(false)}, 150)}>Current Projects</Nav.Link>

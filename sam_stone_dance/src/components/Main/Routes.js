@@ -4,6 +4,7 @@ import { Switch, Route } from "react-router-dom";
 
 import Home from '../Home/Home';
 import About from '../About/About';
+import DanceReel from '../About/DanceReel';
 import CurrentProjects from '../CurrentProjects/CurrentProjects';
 import SamCreates from '../SamCreates/SamCreates';
 import SamTeachPhilosophy from '../SamTeaches/SamTeachPhilosophy';
@@ -20,6 +21,9 @@ export default function Routes() {
             </Route>
             <Route path="/samstonedance/about">
                 <About />
+            </Route>
+            <Route path="/samstonedance/dance-reel">
+                <DanceReel />
             </Route>
             <Route path="/samstonedance/current-projects">
                 <CurrentProjects />
