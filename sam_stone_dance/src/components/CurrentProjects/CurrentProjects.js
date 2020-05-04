@@ -1,15 +1,41 @@
-import React from 'react'
+import React from 'react';
+import CurrentProject from './CurrentProject';
+import axios from 'axios';
 
 import './CurrentProjects.css'
 
-const currentProjects = () => {
+export class CurrentProjects extends React.Component {
+    state = {
+        currentProjects: {},
+        isLoaded: false
+    }
 
-        return(
-            <div className = 'current-projects'>
-            <iframe title='dance_reel' width="840" height="505" id='youtube' src="https://www.youtube.com/embed/jhMEFpUtJhs" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
-            </div>
-        )
+    componentDidMount() {
+        const getCurrent = axios.get('http://axi.smv.mybluehost.me/wp-json/wp/v2/posts?categories=8');
 
+        Promise.all([getCurrent]).then(res => {
+            this.setState({
+                currentProjects: res[0].data,
+                isLoaded: true
+            })
+        });
+    }
+
+    render () {
+        const {currentProjects, isLoaded} = this.state;
+        if(isLoaded) {
+            return (
+                <div>
+                    <div id='current-project-list'>
+                        {currentProjects.map((project, id) => (
+                            <CurrentProject key = {project.id} project={project}/>
+                        ))}
+                    </div>
+                </div>
+            )
+        }
+        return <div id='loading'><h3>Loading...</h3></div>
+    }
 }
 
-export default currentProjects;
+export default CurrentProjects;
