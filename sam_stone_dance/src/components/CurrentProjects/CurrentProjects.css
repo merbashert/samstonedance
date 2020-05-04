@@ -1,0 +1,28 @@
+.current-projects h2{
+    font-family: 'Arvo', sans-serif;
+    text-align: center;
+}
+
+.current-projects a {
+    font-size: 30px;
+}
+
+.current-projects {
+    margin-top: 90px;
+}
+
+.current-project-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ticket-link {
+    border: 1px solid black;
+    padding: 6px;
+    border-radius: 5px;
+}
+
+.current-project-info img {
+    width: 80%;
+}

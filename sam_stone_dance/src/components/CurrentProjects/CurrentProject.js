@@ -1,7 +1,7 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import axios from 'axios';
 
+import './CurrentProjects.css'
 
 export class CurrentProject extends React.Component {
     state = {
@@ -30,13 +30,15 @@ export class CurrentProject extends React.Component {
         if(isLoaded) {
             return (
 
-                    <div className = 'project-info'>
+                    <div className = 'current-project-info'>
+                        <img src={imgUrl} alt={title.rendered} />
+                        <br />
                         <h3>{ title.rendered }</h3>
                         <h6>{ date }</h6>
                         <h6>{ location }</h6>
                         <h6>{ collaborator_1 }</h6>
                         <h6>{ collaborator_2 }</h6>
-                        <h6>{ ticket_link }</h6>
+                        <h6 className='ticket-link'><a href={ ticket_link }>Buy Tickets Here!</a></h6>
                     </div>
             )
         }
