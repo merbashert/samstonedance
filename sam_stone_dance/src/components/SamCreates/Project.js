@@ -35,7 +35,7 @@ export class Project extends React.Component {
         const { imgUrl, images, isLoaded} = this.state;
         const imageArray = [];
         for(let i = 0; i < images.length; i++) {
-            imageArray.push(images[i].media_details.sizes.full.source_url)
+            imageArray.unshift(images[i].media_details.sizes.full.source_url)
         }
         if(isLoaded) {
             return (
