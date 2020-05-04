@@ -6,6 +6,10 @@
 #sam-stone-page {
     margin: 0 120px 80px 120px;
 }
+
+:root {
+    --titles: #943616;
+}
 /**********ANIMATIONS**********/
 @keyframes rotate {
     0% {

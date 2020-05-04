@@ -2,7 +2,7 @@
 
 .bio-headline {
     font-family: 'Arvo', serif;
-    color: #943616;
+    color: var(--titles);
     font-size: 16px;
     font-weight: bolder;
 }

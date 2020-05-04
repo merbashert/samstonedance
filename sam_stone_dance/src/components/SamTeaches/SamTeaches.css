@@ -6,17 +6,13 @@
 .adult-teach h3, .child-teach h3 {
     font-family: 'Arvo', serif;
     margin: 2px, 0px;
-    color: #943616;
+    color: var(--titles);
     font-size: 16px;
     font-weight: 600;
 }
 
 .adult-teach p, .child-teach p {
     line-height: 150%;
-}
-
-.child-teach hr {
-    margin: 8px 0px;
 }
 
 #mail-link {
@@ -31,7 +27,7 @@
     width: 50%;
     float: right;
     margin: 8px;
-    box-shadow: 3px 4px 5px lightgrey;
+    border: 2px solid rgb(211, 211, 211, .7);
 }
 
 .adult-teach hr {
@@ -39,16 +35,17 @@
     margin-right: 53%;
 }
 
-.teaching-philosophy hr{
-    margin: 5px;
+.teaching-philosophy {
+    padding-bottom: 60px;
 }
+
 #one-on-one {
     width: 100%;
 }
 
 .child-teach-photo {
     float: left;
-    margin-right: 8px;
+    margin-right: 16px;
     border: 2px solid rgb(211, 211, 211, .7);
 }
 
@@ -58,4 +55,16 @@
 
 .adult-teach a, .child-teach a {
     font-size: 16px;
+}
+
+#class-button {
+    background-color: gold;
+    padding: 10px;
+    border: 2px solid rgb(211, 211, 211, .7);
+}
+
+#button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
 }
