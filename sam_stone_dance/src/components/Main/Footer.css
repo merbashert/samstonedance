@@ -24,9 +24,13 @@
     color: gold;
 }
 
-.fa-envelope-o, .fa-instagram, .fa-facebook, .fa-youtube, .fa-arrow-circle-o-down {
+.fa-envelope-o, .fa-instagram, .fa-facebook, .fa-arrow-circle-o-down {
   margin-right: 5px;
   font-size: 40px;
+}
+
+.fa-youtube {
+    font-size: 37px;
 }
 
 .mail, .facebook, .youtube {

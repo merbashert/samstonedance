@@ -38,7 +38,7 @@ export class CurrentProject extends React.Component {
                         <h6>{ location }</h6>
                         <h6>{ collaborator_1 }</h6>
                         <h6>{ collaborator_2 }</h6>
-                        <h6 className='ticket-link'><a href={ ticket_link }>Buy Tickets Here!</a></h6>
+                        <h6 className='ticket-link'><a href={ ticket_link } target="_blank" rel="noopener noreferrer">Buy Tickets Here!</a></h6>
                     </div>
             )
         }
