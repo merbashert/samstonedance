@@ -21,7 +21,7 @@ h6 {
 
 .project {
     display:grid;
-    grid-template-columns: 330px 1fr;
+    grid-template-columns: 320px 1fr;
     grid-template-rows: 10% 1fr 10%;
     margin: 20px 0px;
 }

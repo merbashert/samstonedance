@@ -28,7 +28,7 @@ export class CurrentProjects extends React.Component {
         if(isLoaded) {
             return (
                 <div className='current-projects'>
-                    <h2>For up-to-date Sam News, visit her <a href = 'https://www.facebook.com/Sam-Stone-Dance-108382910851063' target="_blank" rel="noopener noreferrer">Facebook</a></h2>
+                    <h2>For up-to-date news, visit the <a href = 'https://www.facebook.com/Sam-Stone-Dance-108382910851063' target="_blank" rel="noopener noreferrer">Sam Stone Dance Facebook page</a></h2>
                     {currentProjects.length < 1 ?
                         <div>
                             <h1>Stay tuned!</h1>
