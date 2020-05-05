@@ -2,7 +2,6 @@ import React from 'react'
 
 import axios from 'axios';
 
-import cv from '../../assets/CV.pdf'
 import './SamTeaches.css'
 
 class SamTeachPhilosophy extends React.Component {
@@ -32,14 +31,13 @@ class SamTeachPhilosophy extends React.Component {
                 <div className='teaching-philosophy'
                     style={{
                         backgroundImage: `url(${image})`,
-                        backgroundPosition: 'center',
+                        backgroundPosition: 'center top',
                         backgroundSize: 'cover',
                         backgroundRepeat: 'no-repeat'
                     }}>
-                    <h3>Teaching Philosophy</h3>
                     <h6 dangerouslySetInnerHTML = {{__html: teachPhilosophy.content.rendered}}></h6>
 
-                    <h6 className='cv'><span className='fa fa-arrow-circle-o-down'></span><a href = {cv} download>Download Teaching CV PDF</a></h6>
+
                 </div>
             )
         }
