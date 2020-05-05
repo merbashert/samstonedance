@@ -34,3 +34,17 @@
     width: 45%;
     border: 2px solid rgb(211, 211, 211, .7);
 }
+
+.no-events {
+    width: 100%;
+    padding-bottom: 30%;
+    display: flex;
+    justify-content: center;
+}
+
+.no-events h1 {
+    font-size: 4vw;
+    margin-top: 20%;
+    font-family: 'Arvo', serif;
+    text-shadow: 2px 2px 2px rgb(0,0,0,.2);
+}
