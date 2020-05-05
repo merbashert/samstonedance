@@ -33,7 +33,7 @@ export class CurrentProjects extends React.Component {
                     {currentProjects.length < 1 ?
                         <div className='no-events'>
                             <h1>Stay tuned!</h1>
-                            <img src = {collage} />
+                            <img src = {collage} alt="collage"/>
                         </div>
                         :
                         <div id='current-project-list'>
