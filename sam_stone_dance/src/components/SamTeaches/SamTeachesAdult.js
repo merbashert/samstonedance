@@ -16,8 +16,8 @@ class SamTeachesAdult extends React.Component {
 
     componentDidMount() {
 
-        const getAdultTeach = axios.get('http://axi.smv.mybluehost.me/wp-json/wp/v2/posts/111?_embed')
-        const getOneOnOne = axios.get('http://axi.smv.mybluehost.me/wp-json/wp/v2/posts/125')
+        const getAdultTeach = axios.get('https://samstonedance.com/wp-json/wp/v2/posts/111?_embed')
+        const getOneOnOne = axios.get('https://samstonedance.com/wp-json/wp/v2/posts/125')
 
 
         Promise.all([getAdultTeach, getOneOnOne]).then(res => {

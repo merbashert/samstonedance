@@ -12,7 +12,7 @@ class SamTeachPhilosophy extends React.Component {
     }
 
     componentDidMount() {
-        const getTeachPhilosophy = axios.get('http://axi.smv.mybluehost.me/wp-json/wp/v2/posts/109?_embed')
+        const getTeachPhilosophy = axios.get('https://samstonedance.com/wp-json/wp/v2/posts/109?_embed')
 
 
         Promise.all([getTeachPhilosophy]).then(res => {

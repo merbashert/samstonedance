@@ -12,7 +12,7 @@ class SamTeachesChild extends React.Component {
     }
 
     componentDidMount() {
-        const getChildTeach = axios.get('http://axi.smv.mybluehost.me/wp-json/wp/v2/posts/113?_embed')
+        const getChildTeach = axios.get('https://samstonedance.com/wp-json/wp/v2/posts/113?_embed')
 
 
         Promise.all([getChildTeach]).then(res => {

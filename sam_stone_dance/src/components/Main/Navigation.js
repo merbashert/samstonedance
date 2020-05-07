@@ -15,31 +15,31 @@ const Navigation = props => {
     return (
 
             <Navbar className='nav-bar' sticky="top" expand="lg" expanded={expanded}>
-                <Navbar.Brand id='brand' as = {NavLink} to="/samstonedance/" onClick={() => setTimeout(() => {setExpanded(false)}, 150)}>Sam Stone Dance</Navbar.Brand>
+                <Navbar.Brand id='brand' as = {NavLink} to="/" onClick={() => setTimeout(() => {setExpanded(false)}, 150)}>Sam Stone Dance</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={() => setExpanded(expanded ? false : "expanded")}/>
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="mr-auto">
                         <div className='navlink'>
                             <NavDropdown title = "About">
-                            <Dropdown.Item as = {NavLink} to="/samstonedance/about" activeClassName='active' onClick={() => setTimeout(() => {setExpanded(false)}, 150)}>Bio</Dropdown.Item>
-                            <Dropdown.Item as = {NavLink} to="/samstonedance/dance-reel"onClick={() => setTimeout(() => {setExpanded(false)}, 150)}>Dance Reel</Dropdown.Item>
+                            <Dropdown.Item as = {NavLink} to="/about" activeClassName='active' onClick={() => setTimeout(() => {setExpanded(false)}, 150)}>Bio</Dropdown.Item>
+                            <Dropdown.Item as = {NavLink} to="/dance-reel"onClick={() => setTimeout(() => {setExpanded(false)}, 150)}>Dance Reel</Dropdown.Item>
                             </NavDropdown>
                         </div>
                         <div className='navlink'>
-                            <Nav.Link as = {NavLink} to="/samstonedance/current-projects"onClick={() => setTimeout(() => {setExpanded(false)}, 150)}>Current Projects</Nav.Link>
+                            <Nav.Link as = {NavLink} to="/current-projects"onClick={() => setTimeout(() => {setExpanded(false)}, 150)}>Current Projects</Nav.Link>
                         </div>
                         <div className='navlink'>
-                            <Nav.Link as = {NavLink} to="/samstonedance/sam-creates"  onClick={() => setTimeout(() => {setExpanded(false)}, 150)}>Sam Creates</Nav.Link>
+                            <Nav.Link as = {NavLink} to="/sam-creates"  onClick={() => setTimeout(() => {setExpanded(false)}, 150)}>Sam Creates</Nav.Link>
                         </div>
                         <div className='navlink'>
                             <NavDropdown title = "Sam Teaches">
-                                <Dropdown.Item  as = {NavLink} to="/samstonedance/sam-teaches-adult">Adult Classes</Dropdown.Item>
-                                <Dropdown.Item as = {NavLink}  to="/samstonedance/sam-teaches-child">Child Classes</Dropdown.Item>
-                                <Dropdown.Item  as = {NavLink} to="/samstonedance/teaching-philosophy">Teaching Philosophy</Dropdown.Item>
+                                <Dropdown.Item  as = {NavLink} to="/sam-teaches-adult">Adult Classes</Dropdown.Item>
+                                <Dropdown.Item as = {NavLink}  to="/sam-teaches-child">Child Classes</Dropdown.Item>
+                                <Dropdown.Item  as = {NavLink} to="/teaching-philosophy">Teaching Philosophy</Dropdown.Item>
                             </NavDropdown>
                         </div>
                         <div className='navlink'>
-                            <Nav.Link  as = {NavLink} to="/samstonedance/contact"  onClick={() => setTimeout(() => {setExpanded(false)}, 150)}>Contact</Nav.Link>
+                            <Nav.Link  as = {NavLink} to="/contact"  onClick={() => setTimeout(() => {setExpanded(false)}, 150)}>Contact</Nav.Link>
                         </div>
                     </Nav>
                 </Navbar.Collapse>

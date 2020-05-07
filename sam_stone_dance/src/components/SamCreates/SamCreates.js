@@ -12,8 +12,8 @@ export class SamCreates extends React.Component {
     }
 
     componentDidMount() {
-        const getEvening = axios.get('http://axi.smv.mybluehost.me/wp-json/wp/v2/posts?tags=3');
-        const getOther = axios.get('http://axi.smv.mybluehost.me/wp-json/wp/v2/posts?tags=4');
+        const getEvening = axios.get('https://samstonedance.com/wp-json/wp/v2/posts?tags=3');
+        const getOther = axios.get('https://samstonedance.com/wp-json/wp/v2/posts?tags=4');
 
         Promise.all([getEvening, getOther]).then(res => {
             this.setState({

@@ -1,11 +1,11 @@
 .current-projects h2{
     font-family: 'Arvo', sans-serif;
     text-align: center;
-    font-size: 30px;
+    font-size: 2vw;
 }
 
 .current-projects a {
-    font-size: 26px;
+    font-size: 2vw;
     text-decoration: underline;
 }
 

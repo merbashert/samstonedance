@@ -16,31 +16,31 @@ import Contact from '../Contact/Contact';
 export default function Routes() {
     return (
         <Switch>
-            <Route exact path="/samstonedance/">
+            <Route exact path="/">
                 <Home/>
             </Route>
-            <Route path="/samstonedance/about">
+            <Route path="/about">
                 <About />
             </Route>
-            <Route path="/samstonedance/dance-reel">
+            <Route path="/dance-reel">
                 <DanceReel />
             </Route>
-            <Route path="/samstonedance/current-projects">
+            <Route path="/current-projects">
                 <CurrentProjects />
             </Route>
-            <Route path="/samstonedance/sam-creates">
+            <Route path="/sam-creates">
                 <SamCreates />
             </Route>
-            <Route path="/samstonedance/teaching-philosophy">
+            <Route path="/teaching-philosophy">
                 <SamTeachPhilosophy />
             </Route>
-            <Route path="/samstonedance/sam-teaches-adult">
+            <Route path="/sam-teaches-adult">
                 <SamTeachesAdult />
             </Route>
-            <Route path="/samstonedance/sam-teaches-child">
+            <Route path="/sam-teaches-child">
                 <SamTeachesChild />
             </Route>
-            <Route path="/samstonedance/contact">
+            <Route path="/contact">
                 <Contact />
             </Route>
         </Switch>

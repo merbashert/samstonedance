@@ -12,7 +12,7 @@ export class CurrentProjects extends React.Component {
     }
 
     componentDidMount() {
-        const getCurrent = axios.get('http://axi.smv.mybluehost.me/wp-json/wp/v2/posts?categories=8');
+        const getCurrent = axios.get('https://samstonedance.com/wp-json/wp/v2/posts?categories=8');
 
         Promise.all([getCurrent]).then(res => {
             this.setState({

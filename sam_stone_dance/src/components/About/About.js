@@ -13,7 +13,7 @@ class About extends React.Component {
 
     componentDidMount() {
 
-        const getAbout = axios.get('http://axi.smv.mybluehost.me/wp-json/wp/v2/posts/102?_embed')
+        const getAbout = axios.get('https://samstonedance.com/wp-json/wp/v2/posts/102?_embed')
 
 
         Promise.all([getAbout]).then(res => {

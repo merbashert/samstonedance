@@ -16,8 +16,8 @@ export class Project extends React.Component {
 
     componentDidMount() {
         const { featured_media, id } = this.props.project;
-        const getImageUrl = axios.get(`http://axi.smv.mybluehost.me/wp-json/wp/v2/media/${featured_media}`);
-        const getImages = axios.get(`http://axi.smv.mybluehost.me/wp-json/wp/v2/media?parent=${id}`);
+        const getImageUrl = axios.get(`https://samstonedance.com/wp-json/wp/v2/media/${featured_media}`);
+        const getImages = axios.get(`https://samstonedance.com/wp-json/wp/v2/media?parent=${id}`);
 
         Promise.all([getImageUrl, getImages]).then(res => {
             this.setState({
