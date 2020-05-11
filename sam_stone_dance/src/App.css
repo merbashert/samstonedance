@@ -46,3 +46,9 @@
     justify-content: center;
     margin-top: 60px;
 }
+
+@media (max-width: 400px) {
+    #loading h3 {
+        font-size: 20px;
+    }
+}
