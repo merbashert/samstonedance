@@ -28,13 +28,7 @@ class SamTeachPhilosophy extends React.Component {
         const { teachPhilosophy, image, isLoaded } = this.state;
         if(isLoaded) {
             return(
-                <div className='teaching-philosophy'
-                    style={{
-                        backgroundImage: `url(${image})`,
-                        backgroundPosition: 'center top',
-                        backgroundSize: 'cover',
-                        backgroundRepeat: 'no-repeat'
-                    }}>
+                <div className='teaching-philosophy'>
                     <h6 dangerouslySetInnerHTML = {{__html: teachPhilosophy.content.rendered}}></h6>
 
 
