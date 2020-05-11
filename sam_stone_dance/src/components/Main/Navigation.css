@@ -117,6 +117,7 @@ div.mr-auto.navbar-nav {
 
     .navbar-toggler.collapsed {
         margin-top: 0px;
+        margin-left: 5px;
     }
 }
 

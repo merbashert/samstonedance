@@ -45,3 +45,23 @@
 .cv a {
     font-size: 16px;
 }
+
+
+@media (max-width: 400px) {
+    .fa-envelope-o, .fa-instagram, .fa-facebook, .fa-arrow-circle-o-down {
+      margin-right: 2px;
+      font-size: 30px;
+    }
+
+    .fa-youtube {
+        font-size: 27px;
+    }
+
+    .social {
+        margin-right: 10px;
+    }
+}
+
+@media (max-width: 400px) {
+
+}
