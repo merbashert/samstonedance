@@ -44,3 +44,20 @@
         margin-bottom: 20px;
     }
 }
+
+@media (max-width: 400px) {
+    .bio {
+        margin: 0px 10px;
+        width: 40%;
+    }
+
+    .about h6 {
+        text-align: center;
+        font-size: 13px;
+    }
+
+    .about hr {
+        margin: 4px 0px;
+    }
+
+}
