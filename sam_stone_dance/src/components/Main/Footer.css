@@ -47,7 +47,7 @@
 }
 
 
-@media (max-width: 400px) {
+@media (max-width: 600px) {
     .fa-envelope-o, .fa-instagram, .fa-facebook, .fa-arrow-circle-o-down {
       margin-right: 2px;
       font-size: 30px;
@@ -62,6 +62,6 @@
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 600px) {
 
 }

@@ -11,7 +11,7 @@
 }
 
 
-@media (max-width: 400px) {
+@media (max-width: 600px) {
     #youtube {
         width: 100%;
         border: 30px solid transparent;

@@ -54,7 +54,7 @@
     align-items: center;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 600px) {
     .no-events h1 {
         font-size: 22px;
         margin-top: 10px;

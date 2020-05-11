@@ -7,9 +7,10 @@
     margin: 0 120px 80px 120px;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 600px) {
     #sam-stone-page {
         margin: 10px;
+        margin-top: 0px;
     }
 }
 
@@ -47,7 +48,7 @@
     margin-top: 60px;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 600px) {
     #loading h3 {
         font-size: 20px;
     }
