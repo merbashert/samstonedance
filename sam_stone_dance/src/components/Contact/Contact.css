@@ -11,9 +11,18 @@
     margin-left: 15px;
 }
 
-.contact-container h4, a {
+.contact-container h4 {
     font-family: 'Arvo', serif;
-    font-size: 30px;
+    font-size: 3.5vh;
+}
+
+.contact-container a {
+    font-family: 'Arvo', serif;
+    font-size: 2.3vh;
+}
+
+#contact-envelope, #contact-instagram {
+    font-size: 4vh;
 }
 
 .contact-info {
@@ -22,10 +31,21 @@
 
 #moon_contact {
     width: 30%;
+    margin-right: 5px;
 }
 
-@media (max-width: 1180px) {
-    .contact-container h4, a {
-        font-size: 15px;
+@media (max-width: 600px) {
+    .contact-container {
+        justify-content: flex-start;
     }
+
+    .contact-container h4 {
+        font-family: 'Arvo', serif;
+        font-size: 2.5vh;
+    }
+
+    .contact-info a {
+        font-size: 14px;
+    }
+
 }
