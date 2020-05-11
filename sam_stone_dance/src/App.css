@@ -7,6 +7,12 @@
     margin: 0 120px 80px 120px;
 }
 
+@media (max-width: 400px) {
+    #sam-stone-page {
+        margin: 10px;
+    }
+}
+
 :root {
     --titles: #943616;
 }
