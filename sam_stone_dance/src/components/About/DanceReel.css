@@ -9,3 +9,19 @@
     border-image: url(../../assets/frame.png) 16% 20% round;
     border-image-width: 57.5px;
 }
+
+
+@media (max-width: 400px) {
+    #youtube {
+        width: 100%;
+        border: 30px solid transparent;
+        border-image: url(../../assets/frame.png) 23.5% 18% round;
+        margin-top: 40px;
+
+    }
+}
+
+
+@media (max-width: 400px) {
+
+}
