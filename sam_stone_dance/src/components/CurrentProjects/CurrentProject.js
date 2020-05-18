@@ -10,7 +10,7 @@ export class CurrentProject extends React.Component {
     }
 
     componentDidMount() {
-        const { featured_media, id } = this.props.project;
+        const { featured_media } = this.props.project;
         const getImageUrl = axios.get(`https://samstonedance.com/wp-json/wp/v2/media/${featured_media}`);
 
         Promise.all([getImageUrl]).then(res => {

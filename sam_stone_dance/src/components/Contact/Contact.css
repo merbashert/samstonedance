@@ -36,16 +36,20 @@
 
 @media (max-width: 600px) {
     .contact-container {
-        justify-content: flex-start;
+        flex-direction: column;
+        text-align: center;
     }
 
     .contact-container h4 {
         font-family: 'Arvo', serif;
-        font-size: 2.5vh;
+        font-size: 3vh;
     }
 
     .contact-info a {
-        font-size: 14px;
+        font-size: 20px;
     }
 
+    #moon_contact {
+        width: 60%;
+    }
 }

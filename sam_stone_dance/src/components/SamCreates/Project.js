@@ -67,7 +67,7 @@ export class Project extends React.Component {
                         <h6>{ performed_by }</h6>
                         <h6>{ music_by }</h6>
                         <h6>{ performance_date }</h6>
-                        {video_excerpt?<a href={video_excerpt} className='btn btn-outline-dark' target="_blank" rel="noopener noreferrer"><h6>Video Excerpt</h6></a>:null}
+                        {video_excerpt?<a href={video_excerpt} className='btn btn-outline-dark' target="_blank" rel="noopener noreferrer"><h6 id='video-button'>Video Excerpt</h6></a>:null}
 
                     </div>
                     <hr/>
