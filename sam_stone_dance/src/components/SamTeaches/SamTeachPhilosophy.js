@@ -7,23 +7,25 @@ import './SamTeaches.css'
 class SamTeachPhilosophy extends React.Component {
     state = {
         teachPhilosophy: '',
+        image: '',
         isLoaded: false
     }
 
     componentDidMount() {
-        const getTeachPhilosophy = axios.get('https://samstonedance.com/wp-json/wp/v2/posts/109')
+        const getTeachPhilosophy = axios.get('https://samstonedance.com/wp-json/wp/v2/posts/109?_embed')
 
 
         Promise.all([getTeachPhilosophy]).then(res => {
             this.setState({
                 teachPhilosophy: res[0].data,
+                image: res[0].data._embedded['wp:featuredmedia']['0'].source_url,
                 isLoaded: true
             })
         }).catch(err => console.log(err));
     }
 
     render () {
-        const { teachPhilosophy, isLoaded } = this.state;
+        const { teachPhilosophy, image, isLoaded } = this.state;
         if(isLoaded) {
             return(
                 <div className='teaching-philosophy'>
